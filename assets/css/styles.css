@@ -37,6 +37,8 @@ body{
 
     --background-index: url('https://discord.com/assets/e6d57714479874c665b36c7adee76b1d.svg');
     --background-pu: url('https://i.ibb.co/9ZPybRg/demo3.png');
+    --background-download: url('https://discord.com/assets/d0d4785a2a708e2e6aae274cbe13cb6c.svg');
+    --background-download-2: url('https://discord.com/assets/48930d53ee497513a0ee4c3c1ae7b3cb.svg');
 
     --font-principal: 'Josefin Sans', sans-serif;
 }
@@ -230,10 +232,19 @@ body{
     text-decoration: none;
     margin: 0 10px;
     font-size: 1rem;
+    transition: .1s all ease;
 }
 
-.hnavcontainer nav a:hover{
+
+
+a.downloadhef:hover,
+a.supporthef:hover,
+a.safetyhef:hover{
     color: var(--white-color-2);
+}
+
+a.poweruphef:hover{
+    color: var(--principal-color);
 }
 
 .hnavcontainer nav{
@@ -247,18 +258,34 @@ body{
 }
 
 .hbtn a{
-    background: var(--white-color-5);
-    color: var(--black-color-1);
     padding: 10px;
     text-decoration: none;
-    font-weight: 900;
+    font-weight: 600;
     font-size: 1.3rem;
     border-radius: 40px;
     transition: .2s all ease;
 }
 
-.hbtn a:hover{
+.hpowerupbtn a{
+    background: transparent;
+    color: var(--black-color-2);
+}
+
+.hindexbtn a{
+    background: var(--black-color-3);
+    color: var(--white-color-2);
+}
+
+.hdownloadbtn a{
+    background: transparent;
+    color: var(--white-color-2);
+}
+
+.hindexbtn a:hover,
+.hpowerupbtn a:hover,
+.hdownloadbtn a:hover{
     background: var(--principal-color);
+    color: var(--black-color-2);
 }
 
 
@@ -272,7 +299,8 @@ body{
 
 /* ///// PRINCIPAL ///// */
 .mcontainerimg,
-.mcontainerimgpu{
+.mcontainerimgpu,
+.mcontainerimgdownload{
     width: 100%;
     height: 580px;
     overflow: hidden;
@@ -344,7 +372,8 @@ body{
 
 
 .mbtndownload a,
-.mbtnopen a{
+.mbtnopen a,
+.mbtncompra a{
     color: var(--white-color);
     text-decoration: none;
     padding: 20px;
@@ -353,12 +382,27 @@ body{
     transition: .2s all ease;
 }
 
+.mbtnhoverdownload a{
+    text-decoration: none;
+    color: var(--white-color);
+    transition: .2s all ease;
+    padding: 20px;
+}
+
 .mbtndownload a{
     background: var(--color-green-general);
 }
 
 .mbtnopen a{
     background: var(--black-color-5);
+}
+
+.mbtncompra a{
+    background: var(--black-color-1);
+}
+
+.mbtncompra a:hover{
+    background: var(--black-color-3);
 }
 
 .mbtndownload a:hover{
@@ -485,6 +529,69 @@ body{
 
 .containerputextinfo p{
     color: var(--white-color-2);
+}
+
+/* ///////// MAIN DOWNLOAD ///////// */
+.mcontainerimgdownload{
+    background-image: var(--background-download-2), var(--background-download);
+    background-repeat: no-repeat;
+    background-position-x: left, right;
+}
+
+.mbtnhoverdownload{
+    flex-direction: column;
+    position: relative;
+}
+
+.mbtnhoverdownload ul{
+    margin-top: 10px;
+    padding: 0px 5px 5px;
+    background: var(--black-color-4);
+    transition: .3s all ease;
+    height: 0;
+    overflow: hidden;
+    bottom: 0;
+}
+
+.mbtnhoverdownload ul li{
+    list-style: none;
+    border-top: 1px solid var(--black-color-2)
+}
+
+.mbtnhoverdownload ul li a{
+    padding: 10px;
+    display: block;
+}
+
+.mbtnhoverdownload ul li a:hover{
+    background: var(--black-color-1);
+}
+
+.mbtnhoverdownload:hover > ul{
+    height: 165px;
+}
+
+.mbtnhoverdownload a img{
+    transform: rotate(-90deg);
+    width: 10px;
+    transition: .3s all ease;
+}
+
+.mbtnhoverdownload:hover a img{
+    transform: rotate(0deg);
+    transition: .4s all ease;
+}
+#downloadall{
+    display: none;
+}
+
+.msubcontainerinfodownload{
+    width: 90%;
+}
+
+.minfodownloadcontainer{
+    display: flex;
+    flex-direction: column;
 }
 
 /* ////////// FOOTER ////////// */
@@ -697,7 +804,7 @@ body{
 
 @media(max-width: 991px){
     .mcontainerflex div{
-        width: 100%;
+        width: calc(100% - 20px);
     }
 
     .mcontainerinfos  .mcontainerflex {
@@ -796,7 +903,8 @@ body{
     }
 
     .mcontainerimg, 
-    .mcontainerimgpu{
+    .mcontainerimgpu,
+    .mcontainerimgdownload{
         height: 390px;
         background-position: bottom;
     }
@@ -838,7 +946,8 @@ body{
     }
 
     .mcontainerimg,
-    .mcontainerimgpu {
+    .mcontainerimgpu,
+    .mcontainerimgdownload {
         height: 270px;
     }
 
@@ -876,7 +985,8 @@ body{
     }
 
     .mcontainerimg,
-    .mcontainerimgpu {
+    .mcontainerimgpu,
+    .mcontainerimgdownload {
         height: 200px;
     }
 
@@ -915,7 +1025,8 @@ body{
     }
 
     .mcontainerimg,
-    .mcontainerimgpu{
+    .mcontainerimgpu,
+    .mcontainerimgdownload{
         overflow: unset;
     }
 
