@@ -302,7 +302,7 @@ a.poweruphef:hover{
 .mcontainerimgpu,
 .mcontainerimgdownload{
     width: 100%;
-    height: 580px;
+    height: auto;
     overflow: hidden;
     background-position: center;
 }
@@ -568,17 +568,17 @@ a.poweruphef:hover{
 }
 
 .mbtnhoverdownload:hover > ul{
-    height: 165px;
+    height: 205px;
 }
 
 .mbtnhoverdownload a img{
-    transform: rotate(-90deg);
+    transform: rotate(0deg);
     width: 10px;
     transition: .3s all ease;
 }
 
 .mbtnhoverdownload:hover a img{
-    transform: rotate(0deg);
+    transform: rotate(90deg);
     transition: .4s all ease;
 }
 #downloadall{
@@ -586,12 +586,43 @@ a.poweruphef:hover{
 }
 
 .msubcontainerinfodownload{
-    width: 90%;
+    width: 100%;
+}
+
+.mcontainerdownloadcontendor{
+    display: inline-flex;
+}
+
+.mcontainerdownloadinfo{
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
 }
 
 .minfodownloadcontainer{
     display: flex;
     flex-direction: column;
+    padding: 30px 50px;
+    background: var(--black-color-2);
+    margin: 10px 0;
+    border-radius: 20px;
+}
+
+.mdownloadcontainerimg{
+    margin: 0 auto;
+    max-height: 320px;
+    overflow: hidden;
+}
+
+.minfotextcontainerd{
+    text-align: center;
+    color: var(--white-color-3);
+    padding: 10px;
+}
+
+.minfotextcontainerd a{
+    color: var(--white-color-4);
+    text-decoration: none;
 }
 
 /* ////////// FOOTER ////////// */
@@ -960,7 +991,7 @@ a.poweruphef:hover{
         color: var(--principal-color);
         position: absolute;
         bottom: -20px;
-        left: 45%;
+        left: 48%;
         font-size: 3rem;
         animation: arrowH infinite 3s;
     }
