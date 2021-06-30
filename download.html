@@ -78,13 +78,13 @@
                                     </div>
                                     <div class="mbtnhoverdownload">
                                         <a style="cursor: pointer;">Explorar más dispositivos <img src="https://icon-library.com/images/white-arrow-icon-png/white-arrow-icon-png-28.jpg" /></a>
-                                        <ul>
-                                            <li id="downloadall"><a href="">Todos</a></li>
-                                            <li><a href="">Windows</a></li>
-                                            <li><a href="">Mac</a></li>
-                                            <li><a href="">Ios</a></li>
-                                            <li><a href="">Android</a></li>
-                                            <li><a href="">Linux</a></li>
+                                        <ul id="menuCatDownload">
+                                            <li id="downloadall"><a onclick="seeAll()" style="cursor: pointer;">Todos</a></li>
+                                            <li><a href="#windows" onclick="seeWindows()">Windows</a></li>
+                                            <li><a href="#mac" onclick="seeMac()">Mac</a></li>
+                                            <li><a href="#ios" onclick="seeIos()">Ios</a></li>
+                                            <li><a href="#android" onclick="seeAndroid()">Android</a></li>
+                                            <li><a href="#linux" onclick="seeLinux()">Linux</a></li>
                                         </ul>
                                     </div>
                                 </div>   
@@ -100,8 +100,8 @@
                 <div class="msubcontainerprincipal"><h1>Disponible donde necesites.</h1></div>
                 <div class="msubcontainerinfodownload">
                     <div class="mcontainerdownloadcontendor">
-                        <div class="mcontainerdownloadinfo">
-                            <div class="minfodownloadcontainer" id="windows">
+                        <div class="mcontainerdownloadinfo" id="pcs">
+                            <div class="minfodownloadcontainer windows" id="windows">
                                 <div class="mdownloadcontainerimg">
                                     <img src="https://discord.com/assets/d0d4785a2a708e2e6aae274cbe13cb6c.svg" />
                                 </div>
@@ -111,7 +111,7 @@
                                 </div>
                             </div>
 
-                            <div class="minfodownloadcontainer" id="mac">
+                            <div class="minfodownloadcontainer mac" id="mac">
                                 <div class="mdownloadcontainerimg">
                                     <img src="https://discord.com/assets/aaef6e9afb93f4a28236410b0d7376ca.svg" />
                                 </div>
@@ -121,7 +121,7 @@
                                 </div>
                             </div>
 
-                            <div class="minfodownloadcontainer" id="linux">
+                            <div class="minfodownloadcontainer linux" id="linux">
                                 <div class="mdownloadcontainerimg">
                                     <img src="https://discord.com/assets/48930d53ee497513a0ee4c3c1ae7b3cb.svg" />
                                 </div>
@@ -132,8 +132,8 @@
                             </div>
                         </div>
 
-                        <div class="mcontainerdownloadinfo" id="ios">
-                            <div class="minfodownloadcontainer">
+                        <div class="mcontainerdownloadinfo" id="mobiles">
+                            <div class="minfodownloadcontainer ios" id="ios">
                                 <div class="mdownloadcontainerimg">
                                     <img src="https://discord.com/assets/7802f24afe58bfbf4cfd3a9e4b210f15.svg" />
                                 </div>
@@ -143,7 +143,7 @@
                                 </div>
                             </div>
 
-                            <div class="minfodownloadcontainer" id="android">
+                            <div class="minfodownloadcontainer android" id="android">
                                 <div class="mdownloadcontainerimg">
                                     <img src="https://discord.com/assets/fbeecd9630673fad538917f2c33a8f62.svg" />
                                 </div>
