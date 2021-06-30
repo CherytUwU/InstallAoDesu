@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 *,
 body{
     margin: 0;
@@ -41,6 +45,7 @@ body{
     --background-download-2: url('https://discord.com/assets/48930d53ee497513a0ee4c3c1ae7b3cb.svg');
 
     --font-principal: 'Josefin Sans', sans-serif;
+    --scroll: scroll-behavior: smooth; ;
 }
 /*object-fit:cover;*/
 
@@ -299,11 +304,9 @@ a.poweruphef:hover{
 
 /* ///// PRINCIPAL ///// */
 .mcontainerimg,
-.mcontainerimgpu,
-.mcontainerimgdownload{
+.mcontainerimgpu{
     width: 100%;
     height: auto;
-    overflow: hidden;
     background-position: center;
 }
 
@@ -533,9 +536,24 @@ a.poweruphef:hover{
 
 /* ///////// MAIN DOWNLOAD ///////// */
 .mcontainerimgdownload{
+    width: 100%;
+    height: 564px;
+    background-position: center;
+}
+
+.mcontainerimgdownload{
     background-image: var(--background-download-2), var(--background-download);
     background-repeat: no-repeat;
     background-position-x: left, right;
+}
+
+
+
+.mcontainerinfodownload{
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    padding: 20px 30px;
 }
 
 .mbtnhoverdownload{
@@ -569,6 +587,10 @@ a.poweruphef:hover{
 
 .mbtnhoverdownload:hover > ul{
     height: 205px;
+}
+
+.mbtnhoverdownload:hover .menuAlto{
+    height: 245px;
 }
 
 .mbtnhoverdownload a img{
