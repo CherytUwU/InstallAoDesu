@@ -14,9 +14,6 @@ function menuHeaderOcultar(){
     document.getElementById('menuHBackground').style.visibility="hidden";
 }
 
-// 245
-
-
 function seeAll(){
     document.getElementById('pcs').style.display="inline-flex"
     document.getElementById('mobiles').style.display="inline-flex"
