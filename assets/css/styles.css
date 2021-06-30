@@ -43,6 +43,7 @@ body{
     --background-pu: url('https://i.ibb.co/9ZPybRg/demo3.png');
     --background-download: url('https://discord.com/assets/d0d4785a2a708e2e6aae274cbe13cb6c.svg');
     --background-download-2: url('https://discord.com/assets/48930d53ee497513a0ee4c3c1ae7b3cb.svg');
+    --background-patron: url('https://image.freepik.com/vector-gratis/panal-hexagonal-tecnologia-gris-oscuro_87543-574.jpg');
 
     --font-principal: 'Josefin Sans', sans-serif;
     --scroll: scroll-behavior: smooth; ;
@@ -133,6 +134,7 @@ body{
     font-family: 'Roboto', sans-serif; /*  /// EXTRA */
     /*background: var(--dark-color-3);*/
     background: var(--black-color-3);
+    overflow-x: hidden;
 }
 
 /* ////////// BOTON OCULTO ////////// */
@@ -545,6 +547,7 @@ a.poweruphef:hover{
     background-image: var(--background-download-2), var(--background-download);
     background-repeat: no-repeat;
     background-position-x: left, right;
+    background-position-y: bottom;
 }
 
 
@@ -772,6 +775,33 @@ a.poweruphef:hover{
     display: none;
 }
 
+@media (max-width: 1760px){
+    .mcontainerimgdownload {
+        background-image: var(--background-download-2), none;
+    }
+}
+
+@media (max-width: 1595px){
+    .mcontainerimgdownload {
+        background-image: var(--background-patron), none;
+        background-repeat: repeat;
+    }
+}
+
+@media (max-width: 1347px){
+    .mdownloadcontainerimg{
+        width: 100%;
+    }
+
+    .mdownloadcontainerimg img{
+        width: 100%;
+    }
+}
+
+@media (max-width: 1330px){
+
+}
+
 @media (max-width: 1200px){
     .mcontainerinfop,
     .mcontainerinfos {
@@ -841,6 +871,20 @@ a.poweruphef:hover{
 
     .msubcontainerprincipal {
         font-size: 1rem;
+    }
+
+    .mcontainerdownloadcontendor {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .mdownloadcontainerimg{
+        width: auto;
+    }
+
+    .mdownloadcontainerimg img{
+        width: auto;
+        height: 100%;
     }
 }
 
@@ -919,7 +963,22 @@ a.poweruphef:hover{
     .msubcontainertextimg div {
         margin: 35px 10px 10px;
     }
+
+    .mdownloadcontainerimg img{
+        width: 100%;
+    }
+
+    .openaodownload{
+        padding: 30px 0;
+    }
     
+    .dw h1{
+       font-size: 2.5rem; 
+    }
+
+    .dw p{
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 520px){
@@ -1017,16 +1076,16 @@ a.poweruphef:hover{
         font-size: 3rem;
         animation: arrowH infinite 3s;
     }
+
+    .fbtndownload a, .fbtnopen a, .mbtndownload a, .mbtnopen a, .mbtncompra a {
+        padding: 12px;
+        font-size: 0.8rem;
+    }
 }
 
 @media (max-width: 310px) {
     .arrow770px{
         display: none;
-    }
-
-    .mbtndownload a, .mbtnopen a {
-        padding: 10px;
-        font-size: 0.8rem;
     }
 
     .mtextimg h1 {
