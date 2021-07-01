@@ -185,6 +185,10 @@ body{
     display: inline-flex;
 }
 
+.hlogocontainer a{
+    text-decoration: none;
+}
+
 .hcontenedornav{
     flex-basis: 66%;
     text-align: center;
@@ -506,16 +510,18 @@ a.poweruphef:hover{
 }
 
 .backgA{
-    /*background: linear-gradient(154deg, var(--color-green-general) -200%, var(--black-color-1)50%);*/
     background: var(--black-color-1);
+    box-shadow: 10px 10px var(--black-color-2);
 }
 
 .backgB{
     background: var(--black-color-2);
+    box-shadow: 10px 10px var(--black-color-1);
 }
 
 .backgC{
     background: var(--black-color-4);
+    box-shadow: 10px 10px var(--black-color-2);
 }
 
 .containerpuimginfo{
@@ -643,6 +649,7 @@ a.poweruphef:hover{
     background: var(--black-color-2);
     margin: 10px 0;
     border-radius: 20px;
+    box-shadow: 10px 10px var(--black-color-1);
 }
 
 .mdownloadcontainerimg{
@@ -849,10 +856,6 @@ a.poweruphef:hover{
     #downloadall{
         display: block !important;
     }
-
-    /*#SeeAllDownload{
-        display: none !important;
-    }*/
 
     #btn1{
         display: inline;
