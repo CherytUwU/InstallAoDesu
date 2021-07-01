@@ -27,6 +27,13 @@ function seeAll(){
 
     document.getElementById('downloadall').style.display="none";
     document.getElementById('menuCatDownload').classList.remove('menuAlto');
+
+        // REMOVE ALL
+        document.getElementById('windows').classList.remove('animation');
+        document.getElementById('mac').classList.remove('animation');
+        document.getElementById('linux').classList.remove('animation');
+        document.getElementById('ios').classList.remove('animation');
+        document.getElementById('android').classList.remove('animation');
 }
 
 function seeWindows(){
@@ -36,8 +43,18 @@ function seeWindows(){
     document.getElementById('mac').style.display="none";
     document.getElementById('downloadall').style.display="block";
 
+    // See
     document.getElementById('windows').style.display="flex";
     document.getElementById('menuCatDownload').classList.add('menuAlto');
+
+    // Animacion
+    document.getElementById('windows').classList.add('animation');
+
+        // Remover A
+        document.getElementById('mac').classList.remove('animation');
+        document.getElementById('linux').classList.remove('animation');
+        document.getElementById('ios').classList.remove('animation');
+        document.getElementById('android').classList.remove('animation');
     
 }
 
@@ -48,8 +65,18 @@ function seeMac(){
     document.getElementById('windows').style.display="none";
     document.getElementById('downloadall').style.display="block";
 
+    // See
     document.getElementById('mac').style.display="flex";
     document.getElementById('menuCatDownload').classList.add('menuAlto');
+
+    // Animacion
+    document.getElementById('mac').classList.add('animation');
+
+        // Remover A
+        document.getElementById('windows').classList.remove('animation');
+        document.getElementById('linux').classList.remove('animation');
+        document.getElementById('ios').classList.remove('animation');
+        document.getElementById('android').classList.remove('animation');
 }
 
 function seeLinux(){
@@ -59,8 +86,18 @@ function seeLinux(){
     document.getElementById('windows').style.display="none";
     document.getElementById('downloadall').style.display="block";
 
+    // See 
     document.getElementById('linux').style.display="flex";
     document.getElementById('menuCatDownload').classList.add('menuAlto')
+
+    // Animation
+    document.getElementById('linux').classList.add('animation');
+
+        // Remover A
+        document.getElementById('windows').classList.remove('animation');
+        document.getElementById('mac').classList.remove('animation');
+        document.getElementById('ios').classList.remove('animation');
+        document.getElementById('android').classList.remove('animation');
 }
 
 function seeIos(){
@@ -69,8 +106,18 @@ function seeIos(){
     document.getElementById('android').style.display="none";
     document.getElementById('downloadall').style.display="block";
 
+    // See
     document.getElementById('ios').style.display="flex"
     document.getElementById('menuCatDownload').classList.add('menuAlto')
+
+    // Animation
+    document.getElementById('ios').classList.add('animation');
+
+        // Remover A
+        document.getElementById('windows').classList.remove('animation');
+        document.getElementById('mac').classList.remove('animation');
+        document.getElementById('linux').classList.remove('animation');
+        document.getElementById('android').classList.remove('animation');
 }
 
 function seeAndroid(){
@@ -79,6 +126,16 @@ function seeAndroid(){
     document.getElementById('ios').style.display="none";
     document.getElementById('downloadall').style.display="block";
 
+    // See
     document.getElementById('android').style.display="flex"
     document.getElementById('menuCatDownload').classList.add('menuAlto')
+
+    // Animation
+    document.getElementById('android').classList.add('animation');
+
+        // Remover A
+        document.getElementById('windows').classList.remove('animation');
+        document.getElementById('mac').classList.remove('animation');
+        document.getElementById('linux').classList.remove('animation');
+        document.getElementById('ios').classList.remove('animation');
 }
