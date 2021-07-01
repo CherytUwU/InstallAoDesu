@@ -563,8 +563,6 @@ a.poweruphef:hover{
     background-position-y: bottom;
 }
 
-
-
 .mcontainerinfodownload{
     display: flex;
     flex-direction: column;
@@ -788,6 +786,10 @@ a.poweruphef:hover{
     display: none;
 }
 
+#mSeeAll, #mSeeNone{
+    display: none;
+}
+
 @media (max-width: 1760px){
     .mcontainerimgdownload {
         background-image: var(--background-download-2), none;
@@ -830,6 +832,18 @@ a.poweruphef:hover{
 }
 
 @media (max-width: 1023px){
+    #mSeeAll{
+        display: inline;
+    }
+
+    #downloadall{
+        display: block;
+    }
+
+    #SeeAllDownload{
+        display: none !important;
+    }
+
     #btn1{
         display: inline;
     }
@@ -898,6 +912,18 @@ a.poweruphef:hover{
     .mdownloadcontainerimg img{
         width: auto;
         height: 100%;
+    }
+
+    .mbtnhoverdownload:hover > ul{
+        height: 0;
+    }
+
+    .mbtnhoverdownload:hover > .menuAlto{
+        height: 0;
+    }
+
+    ul.seeing{
+        height: 245px !important;
     }
 }
 
