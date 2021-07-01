@@ -832,6 +832,15 @@ a.poweruphef:hover{
 }
 
 @media (max-width: 1023px){
+    #mSeeAll img{
+        transform: rotate(0deg);
+        transition: .3s all ease;
+    }
+
+    #mSeeNone{
+        transform: rotate(90deg);
+    }
+    
     #mSeeAll{
         display: inline;
     }
