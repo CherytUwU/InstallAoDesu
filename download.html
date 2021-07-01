@@ -77,8 +77,10 @@
                                         <a href="">Descargar para Windows</a>
                                     </div>
                                     <div class="mbtnhoverdownload">
-                                        <a style="cursor: pointer;">Explorar más dispositivos <img src="./assets/img/arrowright.jpg" /></a>
-                                        <ul id="menuCatDownload">
+                                        <a style="cursor: pointer;" onclick="seeAll()" id="SeeAllDownload">Explorar más dispositivos <img src="./assets/img/arrowright.jpg" /></a>
+                                        <a style="cursor: pointer;" onclick="mSeeAll()" id="mSeeAll">Explorar más dispositivos <img src="./assets/img/arrowright.jpg" /></a>
+                                        <a style="cursor: pointer;" onclick="mSeeNone()" id="mSeeNone">Explorar más dispositivos <img src="./assets/img/arrowright.jpg" /></a>
+                                        <ul id="menuCatDownload" id="menuCatDownload">
                                             <li id="downloadall"><a onclick="seeAll()" style="cursor: pointer;">Todos</a></li>
                                             <li><a href="#titleDirection" onclick="seeWindows()">Windows</a></li>
                                             <li><a href="#titleDirection" onclick="seeMac()">Mac</a></li>
