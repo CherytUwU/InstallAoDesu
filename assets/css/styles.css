@@ -48,6 +48,19 @@ body{
     --font-principal: 'Josefin Sans', sans-serif;
     --scroll: scroll-behavior: smooth; ;
 }
+
+/* ////////// Animaciones ////////// */
+.animation{
+    animation: animationSelectedDownload 4s;
+}
+
+@keyframes animationSelectedDownload{
+    10% {background: var(--black-color-2);}
+    20% {background: var(--black-color-4);}
+    40% {background: var(--black-color-2);}
+
+}
+
 /*object-fit:cover;*/
 
 /* ////////// LIBRERIA PACE.JS ////////// */
