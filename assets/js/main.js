@@ -34,6 +34,58 @@ function seeAll(){
         document.getElementById('linux').classList.remove('animation');
         document.getElementById('ios').classList.remove('animation');
         document.getElementById('android').classList.remove('animation');
+
+        document.getElementById('menuCatDownload').classList.add('seeing')
+}
+
+function mSeeAll(){
+    document.getElementById('pcs').style.display="inline-flex"
+    document.getElementById('mobiles').style.display="inline-flex"
+
+    document.getElementById('windows').style.display="flex";
+    document.getElementById('linux').style.display="flex";
+    document.getElementById('mac').style.display="flex";
+
+    document.getElementById('android').style.display="flex";
+    document.getElementById('ios').style.display="flex";
+
+    document.getElementById('menuCatDownload').classList.remove('menuAlto');
+
+        // REMOVE ALL
+        document.getElementById('windows').classList.remove('animation');
+        document.getElementById('mac').classList.remove('animation');
+        document.getElementById('linux').classList.remove('animation');
+        document.getElementById('ios').classList.remove('animation');
+        document.getElementById('android').classList.remove('animation');
+
+        document.getElementById('menuCatDownload').classList.add('seeing')
+        document.getElementById('mSeeAll').style.display="none";
+        document.getElementById('mSeeNone').style.display="inline";
+}
+
+function mSeeNone(){
+    document.getElementById('pcs').style.display="inline-flex"
+    document.getElementById('mobiles').style.display="inline-flex"
+
+    document.getElementById('windows').style.display="flex";
+    document.getElementById('linux').style.display="flex";
+    document.getElementById('mac').style.display="flex";
+
+    document.getElementById('android').style.display="flex";
+    document.getElementById('ios').style.display="flex";
+    
+    document.getElementById('menuCatDownload').classList.remove('menuAlto');
+
+        // REMOVE ALL
+        document.getElementById('windows').classList.remove('animation');
+        document.getElementById('mac').classList.remove('animation');
+        document.getElementById('linux').classList.remove('animation');
+        document.getElementById('ios').classList.remove('animation');
+        document.getElementById('android').classList.remove('animation');
+
+        document.getElementById('menuCatDownload').classList.remove('seeing');
+        document.getElementById('mSeeAll').style.display="inline";
+        document.getElementById('mSeeNone').style.display="none";
 }
 
 function seeWindows(){
@@ -55,6 +107,10 @@ function seeWindows(){
         document.getElementById('linux').classList.remove('animation');
         document.getElementById('ios').classList.remove('animation');
         document.getElementById('android').classList.remove('animation');
+
+        document.getElementById('menuCatDownload').classList.remove('seeing');
+        document.getElementById('mSeeAll').style.display="inline";
+        document.getElementById('mSeeNone').style.display="none";
     
 }
 
@@ -77,6 +133,10 @@ function seeMac(){
         document.getElementById('linux').classList.remove('animation');
         document.getElementById('ios').classList.remove('animation');
         document.getElementById('android').classList.remove('animation');
+
+        document.getElementById('menuCatDownload').classList.remove('seeing');
+        document.getElementById('mSeeAll').style.display="inline";
+        document.getElementById('mSeeNone').style.display="none";
 }
 
 function seeLinux(){
@@ -98,6 +158,10 @@ function seeLinux(){
         document.getElementById('mac').classList.remove('animation');
         document.getElementById('ios').classList.remove('animation');
         document.getElementById('android').classList.remove('animation');
+
+        document.getElementById('menuCatDownload').classList.remove('seeing');
+        document.getElementById('mSeeAll').style.display="inline";
+        document.getElementById('mSeeNone').style.display="none";
 }
 
 function seeIos(){
@@ -118,6 +182,10 @@ function seeIos(){
         document.getElementById('mac').classList.remove('animation');
         document.getElementById('linux').classList.remove('animation');
         document.getElementById('android').classList.remove('animation');
+
+        document.getElementById('menuCatDownload').classList.remove('seeing');
+        document.getElementById('mSeeAll').style.display="inline";
+        document.getElementById('mSeeNone').style.display="none";
 }
 
 function seeAndroid(){
@@ -138,4 +206,8 @@ function seeAndroid(){
         document.getElementById('mac').classList.remove('animation');
         document.getElementById('linux').classList.remove('animation');
         document.getElementById('ios').classList.remove('animation');
+
+        document.getElementById('menuCatDownload').classList.remove('seeing');
+        document.getElementById('mSeeAll').style.display="inline";
+        document.getElementById('mSeeNone').style.display="none";
 }
