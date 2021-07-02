@@ -486,10 +486,11 @@ a.poweruphef:hover{
 }
 
 .msubcontainerinfopu{
-    display: flex;
-    flex-direction: row;
-    margin: 0 auto;
-    flex-wrap: wrap;
+    display: grid;
+    gap: 2rem;
+    grid-auto-flow: dense;
+    grid-auto-rows: 19rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 21rem), 1fr));
 }
 
 .msubcontainerprincipal{
@@ -501,7 +502,6 @@ a.poweruphef:hover{
 }
 
 .containerpuinfo{
-    width: 300px;
     display: flex;
     flex-direction: column;
     border-radius: 8px;
@@ -573,7 +573,7 @@ a.poweruphef:hover{
     display: flex;
     flex-direction: column;
     margin: 20px auto;
-    padding: 20px 30px;
+    width: 95%;
 }
 
 .mbtnhoverdownload{
@@ -893,11 +893,6 @@ a.poweruphef:hover{
 
     .mprincipal{
         margin-top: 0;
-    }
-
-    .msubcontainerinfopu {
-        flex-direction: column;
-        margin: 0 auto;
     }
 
     .containerpuinfo {
