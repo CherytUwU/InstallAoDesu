@@ -874,7 +874,7 @@ a.poweruphef:hover{
         height: 100rem;
         top: 80px;
         width: 240px;
-        transition: .3s all ease;
+        border-radius: 15px 0px 0px 0px;
         white-space: nowrap;
     }
 
